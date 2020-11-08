@@ -9,7 +9,6 @@ yum -y install wget vim which curl tar gzip
 yum -y groupinstall "Development tools"
 yum -y install binutils
 yum -y install dapl dapl-utils ibacm infiniband-diags libibverbs libibverbs-devel libibverbs-utils libmlx4 librdmacm librdmacm-utils mstflint opensm-libs perftest qperf rdma
-
 yum -y install scl-utils
 yum -y install centos-release-scl
 yum -y install devtoolset-7-toolchain
