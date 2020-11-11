@@ -33,9 +33,9 @@ RUN cd /tmp && \
         cd openmpi-2.1.1 && \
         ./configure --prefix=/usr/local/openmpi --disable-getpwuid --with-psm2=yes --with-memory-manager=none \
 --enable-static=yes --with-pmix --enable-shared --with-verbs --enable-mpirun-prefix-by-default \
---disable-dlopen --enable-wrapper-rpath=no --enable-wrapper-runpath=no
-
-RUN make && make install
+--disable-dlopen --enable-wrapper-rpath=no --enable-wrapper-runpath=no && \
+        make && \
+        make install
 
 # General environment variables
 ENV PATH=/usr/local/openmpi/bin:${PATH}}
