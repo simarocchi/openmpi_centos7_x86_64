@@ -35,10 +35,7 @@ RUN cd /tmp && \
 --enable-static=yes --with-pmix --enable-shared --with-verbs --enable-mpirun-prefix-by-default \
 --disable-dlopen --enable-wrapper-rpath=no --enable-wrapper-runpath=no
 
-make
-make install
-
-%environment
+RUN make && make install
 
 # General environment variables
 ENV PATH=/usr/local/openmpi/bin:${PATH}}
