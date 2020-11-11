@@ -1,4 +1,4 @@
-ROM centos:centos7.4.1708
+FROM centos:centos7.4.1708
 
 RUN yum install -y epel-release
 RUN yum groupinstall -y "Development tools"
